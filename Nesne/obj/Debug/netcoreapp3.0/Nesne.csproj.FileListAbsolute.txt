@@ -1,0 +1,11 @@
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\bin\Debug\netcoreapp3.0\Nesne.exe
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\bin\Debug\netcoreapp3.0\Nesne.deps.json
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\bin\Debug\netcoreapp3.0\Nesne.runtimeconfig.json
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\bin\Debug\netcoreapp3.0\Nesne.runtimeconfig.dev.json
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\bin\Debug\netcoreapp3.0\Nesne.dll
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\bin\Debug\netcoreapp3.0\Nesne.pdb
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\obj\Debug\netcoreapp3.0\Nesne.csprojAssemblyReference.cache
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\obj\Debug\netcoreapp3.0\Nesne.AssemblyInfoInputs.cache
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\obj\Debug\netcoreapp3.0\Nesne.AssemblyInfo.cs
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\obj\Debug\netcoreapp3.0\Nesne.dll
+C:\Users\Gülcihan\source\repos\Nesne\Nesne\obj\Debug\netcoreapp3.0\Nesne.pdb
