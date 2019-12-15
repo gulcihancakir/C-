@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Nesne
 {
-    class RAM
+    class RAM : IComponent
     {
+        
         public void ramKontrolBasla()
         {
             Console.WriteLine("Ram kontrol ediliyor...");
@@ -14,6 +15,16 @@ namespace Nesne
         {
             Console.WriteLine("Ram kontrol edildi.");
 
+        }
+        
+       
+       
+
+        
+
+        public void printdetails(int i)
+        {
+            Console.WriteLine(new String('-', i) + this.GetType().Name + "4 gb");
         }
     }
 }

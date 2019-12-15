@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Nesne
 {
-    class Anakart
+    class Anakart:IComponent
     {
         public void anakartKontrolBasla()
         {
@@ -14,6 +14,13 @@ namespace Nesne
         public void anakartKontrolBitir()
         {
             Console.WriteLine("Anakart kontrol edildi.");
+        }
+
+       
+
+        public void printdetails(int i)
+        {
+            Console.WriteLine(new String('-', i) + this.GetType().Name + "MSI");
         }
     }
 }

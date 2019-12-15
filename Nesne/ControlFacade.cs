@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Nesne
 {
-    class ControlFacade
+    class ControlFacade 
     {
-        IComponent component;
+       
 
         RAM ram;
         Islemci islemci;
@@ -14,10 +14,9 @@ namespace Nesne
         Anakart anakart;
         EkranKarti ekranKarti;
         Speaker speaker;
-        
 
-
-        public ControlFacade(RAM ram,Islemci islemci,Disk disk,Anakart anakart,EkranKarti ekranKarti,Speaker speaker)
+        public ControlFacade(RAM ram, Islemci islemci, Disk disk, Anakart anakart, EkranKarti ekranKarti, Speaker speaker)
+            
         {
             this.ram = ram;
             this.islemci = islemci;
@@ -25,6 +24,9 @@ namespace Nesne
             this.anakart = anakart;
             this.ekranKarti = ekranKarti;
             this.speaker = speaker;
+          
+
+           
 
         }
 
@@ -42,7 +44,7 @@ namespace Nesne
 
         } 
 
-        public void kontrolBitir()
+        public void kontrolBitir(int i)
         {
             Console.WriteLine("...Kontrol Tamamlanıyor...");
             ram.ramKontrolBitir();
@@ -51,7 +53,13 @@ namespace Nesne
             anakart.anakartKontrolBitir();
             ekranKarti.ekranKartiKontrolBitir();
             speaker.speakerKontrolBitir();
+
+            Console.WriteLine("bilgisayar özellikleri yazılıyor...");
+            
+
         }
+
+        
     }
 
     

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Nesne
 {
-    class EkranKarti
+    class EkranKarti :IComponent
     {
         public void ekranKartiKontrolBasla()
         {
@@ -14,6 +14,15 @@ namespace Nesne
         public void ekranKartiKontrolBitir()
         {
             Console.WriteLine("Ekran karti kontrol edildi.");
+        }
+
+       
+
+       
+
+        public void printdetails(int i)
+        {
+            Console.WriteLine(new String('-', i) + this.GetType().Name + "4gb");
         }
     }
 }

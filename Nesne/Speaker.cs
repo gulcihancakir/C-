@@ -4,8 +4,16 @@ using System.Text;
 
 namespace Nesne
 {
-    class Speaker
+    class Speaker : IComponent
     {
+       
+
+        public void printdetails(int i)
+        {
+            Console.WriteLine(new String('-', i) + this.GetType().Name  );
+           
+        }
+
         public void speakerKontrolBasla()
         {
             Console.WriteLine("Speaker kontrol ediliyor...");

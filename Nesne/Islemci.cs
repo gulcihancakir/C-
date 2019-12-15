@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Nesne
 {
-    class Islemci
+    class Islemci : IComponent
     {
         public void islemciKontrolBasla()
         {
@@ -14,6 +14,13 @@ namespace Nesne
         public void islemciKontrolBitir()
         {
             Console.WriteLine("İşlemci Kontrol edildi.");
+        }
+
+        
+
+        public void printdetails(int i)
+        {
+            Console.WriteLine(new String('-', i) + this.GetType().Name +"i7");
         }
     }
 }

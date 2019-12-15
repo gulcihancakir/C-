@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Nesne
 {
-    class Disk
+    class Disk:IComponent
     {
         public void DiskKontrolBasla()
         {
@@ -13,6 +13,13 @@ namespace Nesne
         public void DiskKontrolBitir()
         {
             Console.WriteLine("SSD kontrol edildi.");
+        }
+
+       
+
+        public void printdetails(int i)
+        {
+            Console.WriteLine(new String('-', i) + this.GetType().Name + "256gb SSD");
         }
     }
 }
