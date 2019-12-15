@@ -6,20 +6,17 @@ namespace Nesne
 {
     class Monitor : IComponent
     {
-        public void printDetails()
-        {
-            Console.WriteLine("Casper");
-        }
 
-        public void printdetails(int i)
-        {
-            //Console.WriteLine("Casper");
-            Console.WriteLine(new String('-', i) + this.GetType().Name +"Casper");
-        }
+       
+
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name +"Casper");
+        //}
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.GetType().Name);
         }
     }
 }

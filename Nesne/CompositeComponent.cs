@@ -10,7 +10,9 @@ namespace Nesne
     {
         
 
-        List<IComponent> components; 
+        
+
+        List<IComponent> subcomponents;
         //ArrayList components = new ArrayList();
 
         IComponent name;
@@ -19,31 +21,34 @@ namespace Nesne
         {
             this.description = description;
            this.name=  name;
-            components= new List<IComponent>();
+            subcomponents = new List<IComponent>();
 
         }
-
 
 
         public void add(IComponent component)
         {
-            
-            components.Add(component);
-            
-            
 
+            subcomponents.Add(component);
+             
+        }
+        public void remove(IComponent component)
+        {
+            subcomponents.Remove(component);
         }
         public List<IComponent> getSubordinates()
         {
-            return components;
+            return subcomponents;
         }
         public void printdetails()
         {
+            
             Console.WriteLine(name + description);
             {
-                foreach(var a in  components)
+
+                foreach (var number in subcomponents)
                 {
-                    a.printdetails();
+                    number.printdetails();
                 }
             }
         }

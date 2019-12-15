@@ -14,6 +14,7 @@ namespace Nesne
             this.description = description;
         }
 
+
         public void printDetails()
         {
             
@@ -22,16 +23,16 @@ namespace Nesne
 
         }
 
-        public void printdetails(int i)
-        {
+        //public void printdetails(int i)
+        //{
             
 
-            Console.WriteLine(new String('-', i) + " " + name + " " +description);
-        }
+        //    Console.WriteLine(new String('-', i) + " " + name + " " +description);
+        //}
 
         public void printdetails()
-        {
-            Console.WriteLine( name + " " + description);
+        { 
+            Console.WriteLine( name + "  " + description);
         }
     }
 }

@@ -6,6 +6,7 @@ namespace Nesne
 {
     class Islemci : IComponent
     {
+
         public void islemciKontrolBasla()
         {
             Console.WriteLine("İşlemci Kontrol ediliyor...");
@@ -18,14 +19,14 @@ namespace Nesne
 
         
 
-        public void printdetails(int i)
-        {
-            Console.WriteLine(new String('-', i) + this.GetType().Name +"i7");
-        }
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name +"i7");
+        //}
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.GetType().Name);
         }
     }
 }

@@ -6,6 +6,7 @@ namespace Nesne
 {
     class Anakart:IComponent
     {
+
         public void anakartKontrolBasla()
         {
             Console.WriteLine("Anakart kontrol ediliyor...");
@@ -18,14 +19,14 @@ namespace Nesne
 
        
 
-        public void printdetails(int i)
-        {
-            Console.WriteLine(new String('-', i) + this.GetType().Name + "MSI");
-        }
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name + "MSI");
+        //}
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.GetType().Name);
         }
     }
 }

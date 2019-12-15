@@ -6,6 +6,7 @@ namespace Nesne
 {
     class Disk:IComponent
     {
+
         public void DiskKontrolBasla()
         {
             Console.WriteLine("SSD kontrol edilmeye başlanıyor...");
@@ -17,14 +18,14 @@ namespace Nesne
 
        
 
-        public void printdetails(int i)
-        {
-            Console.WriteLine(new String('-', i) + this.GetType().Name + "256gb SSD");
-        }
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name + "256gb SSD");
+        //}
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.GetType().Name);
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Nesne
 {
     class RAM : IComponent
     {
-        
+
         public void ramKontrolBasla()
         {
             Console.WriteLine("Ram kontrol ediliyor...");
@@ -29,7 +29,8 @@ namespace Nesne
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.GetType().Name);
+            
         }
     }
 }

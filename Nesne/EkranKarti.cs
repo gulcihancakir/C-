@@ -6,6 +6,7 @@ namespace Nesne
 {
     class EkranKarti :IComponent
     {
+
         public void ekranKartiKontrolBasla()
         {
             Console.WriteLine("Ekran karti kontrol ediliyor...");
@@ -20,14 +21,14 @@ namespace Nesne
 
        
 
-        public void printdetails(int i)
-        {
-            Console.WriteLine(new String('-', i) + this.GetType().Name + "4gb");
-        }
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name + "4gb");
+        //}
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.GetType().Name);
         }
     }
 }

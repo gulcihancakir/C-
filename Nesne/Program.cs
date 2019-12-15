@@ -25,7 +25,7 @@ namespace Nesne
 
             ControlFacade controlFacade = new ControlFacade(ram, islemci, disk, anakart, ekranKarti, speaker,soundCard);
             controlFacade.kontrolbasla();
-            controlFacade.kontrolBitir(1);
+            controlFacade.kontrolBitir();
 
             
 
@@ -33,12 +33,19 @@ namespace Nesne
             
             CompositeComponent root = new CompositeComponent(anakart,"MSI");
             CompositeComponent component = new CompositeComponent(ekranKarti,"4GB");
+            CompositeComponent component1 = new CompositeComponent(ram,"8GB");
             component.add(new LeafComponent(monitor,"Casper"));
             root.add(new LeafComponent(ram,"8gb"));
             root.add(new LeafComponent(islemci,"i7"));
             root.add(new LeafComponent(disk,"256gb SSD"));
             root.add(new LeafComponent(speaker,"-"));
             root.add(component);
+            root.add(component1);
+            root.remove(component1);
+            
+            
+            
+
             root.printdetails();
             
 

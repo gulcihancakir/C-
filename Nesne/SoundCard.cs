@@ -7,7 +7,6 @@ namespace Nesne
     class SoundCard : IComponent
     {
 
-
         public void SoundCardKontrolBasla()
         {
             Console.WriteLine("SoundCard kontrol ediliyor...");
@@ -17,14 +16,14 @@ namespace Nesne
             Console.WriteLine("SoundCard kontrol edildi.");
 
         }
-        public void printdetails(int i)
-        {
-            Console.WriteLine(new String('-', i) + this.GetType().Name);
-        }
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name);
+        //}
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.GetType().Name);
         }
     }
 }

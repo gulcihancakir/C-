@@ -47,7 +47,7 @@ namespace Nesne
 
         } 
 
-        public void kontrolBitir(int i)
+        public void kontrolBitir()
         {
             Console.WriteLine("...Kontrol Tamamlanıyor...");
             ram.ramKontrolBitir();

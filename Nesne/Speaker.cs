@@ -6,17 +6,17 @@ namespace Nesne
 {
     class Speaker : IComponent
     {
-       
 
-        public void printdetails(int i)
-        {
-            Console.WriteLine(new String('-', i) + this.GetType().Name  );
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name  );
            
-        }
+        //}
 
         public void printdetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine( this.GetType().Name);
+
         }
 
         public void speakerKontrolBasla()
