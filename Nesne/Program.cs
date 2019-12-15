@@ -20,9 +20,10 @@ namespace Nesne
             EkranKarti ekranKarti = new EkranKarti();
             Speaker speaker = new Speaker();
             Monitor monitor = new Monitor();
+            SoundCard soundCard = new SoundCard();
 
 
-            ControlFacade controlFacade = new ControlFacade(ram, islemci, disk, anakart, ekranKarti, speaker);
+            ControlFacade controlFacade = new ControlFacade(ram, islemci, disk, anakart, ekranKarti, speaker,soundCard);
             controlFacade.kontrolbasla();
             controlFacade.kontrolBitir(1);
 
@@ -38,8 +39,7 @@ namespace Nesne
             root.add(new LeafComponent(disk,"256gb SSD"));
             root.add(new LeafComponent(speaker,"-"));
             root.add(component);
-            root.printdetails(1);
-
+            root.printdetails();
             
 
 

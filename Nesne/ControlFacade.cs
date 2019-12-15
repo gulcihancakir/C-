@@ -14,8 +14,9 @@ namespace Nesne
         Anakart anakart;
         EkranKarti ekranKarti;
         Speaker speaker;
+        SoundCard SoundCard;
 
-        public ControlFacade(RAM ram, Islemci islemci, Disk disk, Anakart anakart, EkranKarti ekranKarti, Speaker speaker)
+        public ControlFacade(RAM ram, Islemci islemci, Disk disk, Anakart anakart, EkranKarti ekranKarti, Speaker speaker,SoundCard soundCard)
             
         {
             this.ram = ram;
@@ -24,6 +25,7 @@ namespace Nesne
             this.anakart = anakart;
             this.ekranKarti = ekranKarti;
             this.speaker = speaker;
+            this.SoundCard = soundCard;
           
 
            
@@ -39,6 +41,7 @@ namespace Nesne
             anakart.anakartKontrolBasla();
             ekranKarti.ekranKartiKontrolBasla();
             speaker.speakerKontrolBasla();
+            SoundCard.SoundCardKontrolBasla();
             
             
 
@@ -53,6 +56,8 @@ namespace Nesne
             anakart.anakartKontrolBitir();
             ekranKarti.ekranKartiKontrolBitir();
             speaker.speakerKontrolBitir();
+            SoundCard.SoundCardKontrolBitir();
+            
 
             Console.WriteLine("bilgisayar özellikleri yazılıyor...");
             

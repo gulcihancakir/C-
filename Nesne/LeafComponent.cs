@@ -28,5 +28,10 @@ namespace Nesne
 
             Console.WriteLine(new String('-', i) + " " + name + " " +description);
         }
+
+        public void printdetails()
+        {
+            Console.WriteLine( name + " " + description);
+        }
     }
 }

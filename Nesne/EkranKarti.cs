@@ -24,5 +24,10 @@ namespace Nesne
         {
             Console.WriteLine(new String('-', i) + this.GetType().Name + "4gb");
         }
+
+        public void printdetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

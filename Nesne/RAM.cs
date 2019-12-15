@@ -22,9 +22,14 @@ namespace Nesne
 
         
 
-        public void printdetails(int i)
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + this.GetType().Name + "4 gb");
+        //}
+
+        public void printdetails()
         {
-            Console.WriteLine(new String('-', i) + this.GetType().Name + "4 gb");
+            throw new NotImplementedException();
         }
     }
 }

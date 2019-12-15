@@ -21,5 +21,10 @@ namespace Nesne
         {
             Console.WriteLine(new String('-', i) + this.GetType().Name + "256gb SSD");
         }
+
+        public void printdetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

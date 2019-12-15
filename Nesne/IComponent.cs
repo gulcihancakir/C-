@@ -6,7 +6,7 @@ namespace Nesne
 {
     interface IComponent
     {
-        void printdetails(int i);
+        void printdetails();
         
     }
 }

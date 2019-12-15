@@ -14,6 +14,11 @@ namespace Nesne
            
         }
 
+        public void printdetails()
+        {
+            throw new NotImplementedException();
+        }
+
         public void speakerKontrolBasla()
         {
             Console.WriteLine("Speaker kontrol ediliyor...");

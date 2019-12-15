@@ -22,5 +22,10 @@ namespace Nesne
         {
             Console.WriteLine(new String('-', i) + this.GetType().Name +"i7");
         }
+
+        public void printdetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

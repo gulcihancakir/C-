@@ -16,5 +16,10 @@ namespace Nesne
             //Console.WriteLine("Casper");
             Console.WriteLine(new String('-', i) + this.GetType().Name +"Casper");
         }
+
+        public void printdetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

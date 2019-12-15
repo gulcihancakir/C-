@@ -22,5 +22,10 @@ namespace Nesne
         {
             Console.WriteLine(new String('-', i) + this.GetType().Name + "MSI");
         }
+
+        public void printdetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

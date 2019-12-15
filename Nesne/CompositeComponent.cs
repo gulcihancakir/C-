@@ -33,18 +33,32 @@ namespace Nesne
             
 
         }
-
-        public void printdetails(int i)
+        public List<IComponent> getSubordinates()
         {
-            Console.WriteLine(new String('-', i) + "+" + name + " " +description);
-            //name.printdetails(i);
-            foreach (var number in components)
-            {
-                number.printdetails(i + 2);
-                
-                
-            }
-            Console.WriteLine("ürün paketleniyor...");
+            return components;
         }
+        public void printdetails()
+        {
+            Console.WriteLine(name + description);
+            {
+                foreach(var a in  components)
+                {
+                    a.printdetails();
+                }
+            }
+        }
+
+        //public void printdetails(int i)
+        //{
+        //    Console.WriteLine(new String('-', i) + "+" + name + " " +description);
+        //    //name.printdetails(i);
+        //    foreach (var number in components)
+        //    {
+        //        number.printdetails(i);
+
+
+        //    }
+
+        //}
     }
 }
